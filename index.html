@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotter - Slytherin Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <img src="images/slytherin-logo.png" alt="Slytherin Logo" class="logo">
+        <h1>Quotter</h1>
+        <ul>
+            <li><a href="#" id="home"><img src="images/home-icon.png" alt="Home"> Home</a></li>
+            <li><a href="#" id="communities"><img src="images/communities-icon.png" alt="Communities"> Communities</a></li>
+            <li><a href="#" id="topics"><img src="images/topics-icon.png" alt="Topics"> Topics</a></li>
+            <li><a href="#" id="notifications"><img src="images/notifications-icon.png" alt="Notifications"> Notifications</a></li>
+            <li><a href="#" id="messages"><img src="images/messages-icon.png" alt="Messages"> Messages</a></li>
+            <li><a href="#" id="profile"><img src="images/profile-icon.png" alt="Profile"> Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Feed de posts -->
+    <div class="feed">
+        <h2>Feed de Postagens</h2>
+        <div class="post-form">
+            <textarea id="post-content" placeholder="O que está acontecendo?" required></textarea>
+            <button id="post-button">Postar</button>
+        </div>
+
+        <!-- Container para posts -->
+        <div id="post-feed"></div>
+    </div>
+
+    <!-- UI para selecionar o nome do usuário ao postar -->
+    <div id="post-name-modal" class="modal">
+        <div class="modal-content">
+            <p>Com qual nome gostaria de publicar isto?</p>
+            <input type="text" id="username-input" placeholder="Nome de usuário">
+            <button id="confirm-post">Confirmar</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
